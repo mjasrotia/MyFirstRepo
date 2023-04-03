@@ -79,3 +79,14 @@ Description automatically generated](<../../.gitbook/assets/7 (10).png>)
 ![Graphical user interface, application
 
 Description automatically generated](<../../.gitbook/assets/8 (6).png>)
+
+{% hint style="info" %}
+**Checkpoint**
+
+* At this point, we did the following
+  * Identified all the standard field groups required for the schema.
+  * identified the profile class.
+  * Created the custom field group to add the custom properties not existing already in the standard field group.
+  * Created the "Customer Account" schema.
+  * Used JSON patch to demonstrate how to change a schema using API calls.
+{% endhint %}
