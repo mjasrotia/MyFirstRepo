@@ -1,7 +1,5 @@
 # Overview
 
-![](<.gitbook/assets/0 (3).jpeg>)
-
 ### **Lab Overview**
 
 Being able to work with the Experience Platform APIs is critical to being able to understand how to automate and operationalize various features of the platform. Defining schemas and understanding how data is described by those schemas is one of the first things a customer will do on Adobe Experience Platform as they define their data architecture.
@@ -53,20 +51,3 @@ Refer this Source to XDM mapping sheet which you would have finalized before cre
 | source             | \_devbc.account.acqSource    |                | Customer Account Details       |
 | planID             | \_devbc.plan\_planID         | RI             | Customer Account Details       |
 | planName           | \_devbc.plan.name            |                | Customer Account Details       |
-
-### **Glossary**
-
-| Term                                                                         | Description/Definition                                        |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| \_devbc                                                                      | Sample tenant namespace                                       |
-| https://platform.adobe.io/data/foundation/ schemaregistry/tenant             | Schema Registry end point to access tenant XDM components     |
-| https://platform.adobe.io/data/foundation/ schemaregistry/global             | Schema Registry end point to access tenant XDM components     |
-| https://platform.adobe.io/data/foundation/ schemaregistry/global/schemas     | Schema Registry end point for standard XDM Schemas            |
-| https://platform.adobe.io/data/foundation/ schemaregistry/tenant/schemas     | Schema Registry end point for tenant XDM Schemas              |
-| https://platform.adobe.io/data/foundation/ schemaregistry/global/mixins      | Schema Registry end point for standard XDM Field Groups       |
-| https://platform.adobe.io/data/foundation/ schemaregistry/tenant/schemas     | Schema Registry end point for tenant XDM Field Groups         |
-| https://platform.adobe.io/data/foundation/ schemaregistry/global/descriptors | Schema Registry end point for standard XDM Schema Descriptors |
-| https://platform.adobe.io/data/foundation/ schemaregistry/tenant/descriptors | Schema Registry end point for tenant XDM Schema Descriptors   |
-| **GET**                                                                      | API call to fetch an XDM component                            |
-| **POST**                                                                     | API call to create an XDM component                           |
-| **PATCH**                                                                    | API call to update or add to an existing XDM component        |
