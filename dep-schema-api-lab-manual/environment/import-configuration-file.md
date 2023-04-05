@@ -51,7 +51,7 @@ Description automatically generated](<../../.gitbook/assets/12 (3).png>)
 
 ## **3. Authenticate your Sandbox credentials**
 
-* Click **** on **“IMS: JWT Generate + Auth via User Token”** API call in the “Authenticate” Folder. **Do not execute it yet.**
+* Click on **“IMS: JWT Generate + Auth via User Token”** API call in the “Authenticate” Folder. **Do not execute it yet.**
 * The above API will generate the bearer token for you to authenticate your identity but it’s worth going through the following points in brief to understand the authentication process.
 * Make sure that you have the following parameters defined in your environment file. Following parameters should have been made available as part of your postman setup prerequisite. The values of these parameters will be provided by the instructor.
   * CLIENT\_SECRET

@@ -9,7 +9,7 @@
 Description automatically generated](../../.gitbook/assets/0.png)
 
 * While using APIs, we can use a JSON PATCH call to update a portion of the schema. More information about JSON patch is here
-  * [**http://jsonpatch.com/**](http://jsonpatch.com/)****
+  * [**http://jsonpatch.com/**](http://jsonpatch.com/)
   * **https://experienceleague.adobe.com/docs/experience-platform/xdm/api/ schemas.html#patch**
 * Remember the following points.
   * In AEP, a schema is composed of a class and a set of 1 or more field groups.
@@ -21,7 +21,7 @@ Description automatically generated](../../.gitbook/assets/0.png)
 
 ## **2. Get the fully qualified path for the schema object you need to update**
 
-* **Execute the “Step 1 - Get Tenant Field groups”** under **“XDM API Lab Customize Schema”** folder **** by clicking the **“Send”** button
+* **Execute the “Step 1 - Get Tenant Field groups”** under **“XDM API Lab Customize Schema”** folder by clicking the **“Send”** button
 
 ![Graphical user interface, text, application
 
@@ -34,7 +34,7 @@ Description automatically generated](../../.gitbook/assets/1.png)
 
 Description automatically generated](<../../.gitbook/assets/2 (5).png>)
 
-* **Execute the “Step 2 - Fetch path for the object to be modified”** under **“XDM API Lab Customize Schema”** folder **** by clicking the **“Send”** button
+* **Execute the “Step 2 - Fetch path for the object to be modified”** under **“XDM API Lab Customize Schema”** folder by clicking the **“Send”** button
 * Get the fully qualified JSON path for the object which needs to be updated. In this case, you will have to get the path for the “plan” object. /definitions/customFields/properties/\_devbc/properties/plan/properties
 
 ![A picture containing graphical user interface
@@ -43,7 +43,7 @@ Description automatically generated](<../../.gitbook/assets/3 (5).png>)
 
 * **Click on “Step 3 - Modify Tenant Field group”** API call in the **“XDM API Lab Customize Schema”** Folder. **Do not execute it yet.**
 
-****
+
 
 ![Graphical user interface, text, application, email
 

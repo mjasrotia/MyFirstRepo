@@ -31,4 +31,3 @@ Description automatically generated](../../.gitbook/assets/4.png)
 * Note the use of **“descriptors”** in **https://platform.adobe.io/data/foundation/ schemaregistry/tenant/descriptors.**
 {% endhint %}
 
-****

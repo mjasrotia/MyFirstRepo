@@ -25,29 +25,4 @@ Be able to build a schema utilizing only the Experience Platform API’s through
 Refer this Source to XDM mapping sheet which you would have finalized before creating the schemas.\
 
 
-| Source Column      | XDM Property                 | XDM Descriptor | XDM Field Group/Class          |
-| ------------------ | ---------------------------- | -------------- | ------------------------------ |
-| customerID         | \_devbc.customerID           | PI             | Customer Account Details       |
-| firstName          | person.name.firstName        |                | Demographic Details            |
-| lastName           | person.name.lastName         |                | Demographic Details            |
-| email              | personalEmail.address        | I              | Personal Contact Details       |
-| mobilePhone        | mobilePhone.number           |                | Personal Contact Details       |
-| birthDate          | person.birthDayAndMonth      |                | Demographic Details            |
-| birthDate          | person.birthYear             |                | Demographic Details            |
-| billingstreet      | billingAddress.street1       |                | Personal Contact Details       |
-| billingcity        | billingAddress.city          |                | Personal Contact Details       |
-| billingstate       | billingAddress.state         |                | Personal Contact Details       |
-| billingpostalCode  | billingAddress.postalCode    |                | Personal Contact Details       |
-| shippingstreet     | shippingAddress.street1      |                | Personal Contact Details       |
-| shippingcity       | shippingAddress.city         |                | Personal Contact Details       |
-| shippingstate      | shippingAddress.state        |                | Personal Contact Details       |
-| shippingpostalCode | shippingAddress.postalCode   |                | Personal Contact Details       |
-| emailOptIn         | consents.marketing.email.val |                | Consent And Preference Details |
-| smsOptIn           | consents.marketing.sms.val   |                | Consent And Preference Details |
-| accountCreateDate  | \_devbc.account.createDate   |                | Customer Account Details       |
-| accountEndDate     | \_devbc.account.endDate      |                | Customer Account Details       |
-| createDate         | repo.createDate              |                | XDM Individual Profile         |
-| modifyDate         | repo.modifyDate              |                | XDM Individual Profile         |
-| source             | \_devbc.account.acqSource    |                | Customer Account Details       |
-| planID             | \_devbc.plan\_planID         | RI             | Customer Account Details       |
-| planName           | \_devbc.plan.name            |                | Customer Account Details       |
+{% file src=".gitbook/assets/Customer Account Source to XDM Mapping.xlsx" %}

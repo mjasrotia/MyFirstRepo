@@ -20,7 +20,7 @@ Description automatically generated](<../../.gitbook/assets/19 (1).png>)
 * Note the use of **“tenant”** in **https://platform.adobe.io/data/foundation/ schemaregistry/tenant/mixins.**
 * Note the use of **“tenant”** in **https://platform.adobe.io/data/foundation/ schemaregistry/tenant/mixins.**
 * Observe the use of “meta:altId” to fetch the Schema from the registry. Replace the meta:altID in your API with the meta:altID of the Customer Account Schema.
-* Also observe the “Accept” header which tells the schema registry what to return in the API Response. You can see other “Accept” header options here [**Schema**](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/overview.html?lang=en) **** [**Registry APIs**](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/overview.html?lang=en)
+* Also observe the “Accept” header which tells the schema registry what to return in the API Response. You can see other “Accept” header options here [**Schema**](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/overview.html?lang=en) [**Registry APIs**](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/overview.html?lang=en)
 * With the pre-loaded Accept Header, you will see the fully exploded hierarchical view of the Customer Account Schema where every single property belonging to a class or a field group will be exposed.
 * All the object properties will be exploded all the way to their leaf nodes.
 {% endhint %}

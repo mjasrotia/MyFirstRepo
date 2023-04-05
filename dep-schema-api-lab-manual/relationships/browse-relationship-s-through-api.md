@@ -24,4 +24,3 @@ Description automatically generated](<../../.gitbook/assets/9 (1).png>)
 You will start seeing the relationship descriptors now as well in addition to the identity descriptors.
 {% endhint %}
 
-****
