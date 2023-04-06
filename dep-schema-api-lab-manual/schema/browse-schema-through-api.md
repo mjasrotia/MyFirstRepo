@@ -2,21 +2,20 @@
 
 ## Execute **“Step 5 - Get Customer Account Schema”** API call by clicking the “Send” button.
 
-* A sample **“GET”** schema descriptor is shown below\
+A sample **“GET”** schema descriptor is shown below\
 
 
 <figure><img src="../../.gitbook/assets/Get CA Schema using meta altID.png" alt=""><figcaption></figcaption></figure>
 
-* Replace the meta:altID in your API call with your “Customer Account” schema’s “meta:altID”.
-* A sample API **“RESPONSE”** looks like below:
+Replace the meta:altID in your API call with your “Customer Account” schema’s “meta:altID”.
+
+A sample API **“RESPONSE”** looks like below:
 
 ![Timeline
 
 Description automatically generated](<../../.gitbook/assets/19 (1).png>)
 
 {% hint style="info" %}
-**Notes:**
-
 * Note the use of **“tenant”** in **https://platform.adobe.io/data/foundation/ schemaregistry/tenant/mixins.**
 * Note the use of **“tenant”** in **https://platform.adobe.io/data/foundation/ schemaregistry/tenant/mixins.**
 * Observe the use of “meta:altId” to fetch the Schema from the registry. Replace the meta:altID in your API with the meta:altID of the Customer Account Schema.

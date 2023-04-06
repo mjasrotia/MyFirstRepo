@@ -1,55 +1,56 @@
 # Import Configuration File
 
-## 1. **Import the environment configuration file.**
+## **Import the environment configuration file.**
 
-* <mark style="color:red;">**Link for the configuration file**</mark>
-* Click on the **“import”** button
+<mark style="color:red;">**Link for the configuration file**</mark>
+
+Click on the **“import”** button
 
 ![Graphical user interface, application
 
 Description automatically generated](<../../.gitbook/assets/6 (4).png>)
 
-* **“upload”** the provided environment configuration file
+**“Upload”** the provided environment configuration file
 
 ![Graphical user interface, text, application, email
 
 Description automatically generated](<../../.gitbook/assets/7 (8).png>)
 
-* The file will be automatically identified as an **“environment”** file
+The file will be automatically identified as an **“environment”** file
 
 ![Graphical user interface, application, Word
 
 Description automatically generated](<../../.gitbook/assets/8 (2).png>)
 
-* Once imported, your environment file will appear top right hand corner as shown below.
+Once imported, your environment file will appear top right hand corner as shown below.
 
 ![Graphical user interface, text, application, email
 
 Description automatically generated](<../../.gitbook/assets/9 (3).png>)
 
-## **2. Add the “SANDBOX\_NAME” variable into your environment file.**
+## **Add the “SANDBOX\_NAME” variable into your environment file.**
 
-* Click on the **“Environment Quick Look”** button next to your Environment File\
+Click on the **“Environment Quick Look”** button next to your Environment File\
 
 
 ![Graphical user interface, text, application, email
 
 Description automatically generated](../../.gitbook/assets/10.png)
 
-* Click **“Edit”** button to add the variable for Sandbox as shown below:\
+Click **“Edit”** button to add the variable for Sandbox as shown below:\
 
 
 ![](../../.gitbook/assets/11.png)
 
-* Add the variable **“SANDBOX\_NAME”** in the environment file as shown below:
+Add the variable **“SANDBOX\_NAME”** in the environment file as shown below:
 
 ![Graphical user interface, text, application, email
 
 Description automatically generated](<../../.gitbook/assets/12 (3).png>)
 
-* Make sure you hit the “Save” button after you add the variable and the values in both the **“INITIAL\_VALUE”** and “**CURRENT\_VALUE”** Fields. example: _attendee-001_
+Make sure you hit the “Save” button after you add the variable and the values in both the **“INITIAL\_VALUE”** and “**CURRENT\_VALUE”** Fields. example: _attendee-001_
 
-## **3. Authenticate your Sandbox credentials**
+## **Authenticate your Sandbox credentials**
 
 * Click on **“IMS: JWT Generate + Auth via User Token”** API call in the “Authenticate” Folder. **Do not execute it yet.**
 * The above API will generate the bearer token for you to authenticate your identity but it’s worth going through the following points in brief to understand the authentication process.
@@ -76,27 +77,30 @@ Description automatically generated](<../../.gitbook/assets/12 (3).png>)
 
 ![](<../../.gitbook/assets/13 (2).png>)
 
-* Execute “IMS: JWT Generate + Auth via User Token” by clicking the “Send” button
+Execute “IMS: JWT Generate + Auth via User Token” by clicking the “Send” button
 
 ![Graphical user interface, text, application, email
 
 Description automatically generated](<../../.gitbook/assets/14 (1).png>)
 
-* Sample Response looks like below:
+Sample Response looks like below:
 
 ![Graphical user interface, text
 
 Description automatically generated](<../../.gitbook/assets/15 (4).png>)
 
-* Make sure your Environment file has the right parameters populated. Common errors you could get are:
-  * Invalid IMS
+Make sure your Environment file has the right parameters populated.&#x20;
+
+## Common Errors
+
+**Invalid IMS**
 
 ![Graphical user interface, text, application, email
 
 Description automatically generated](<../../.gitbook/assets/16 (3).png>)
 
-*   **Invalid IMS\_ORG**
+**Invalid IMS\_ORG**
 
-    <figure><img src="../../.gitbook/assets/invalid IMS ORG.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/invalid IMS ORG.png" alt=""><figcaption></figcaption></figure>
 
-    *
+*

@@ -12,13 +12,12 @@ What should you walk away with after taking this Lab?
 
 Be able to build a schema utilizing only the Experience Platform API’s through a variety of XDM foundational components such as:
 
-*
-  1. Classes
-  2. Field Group’s
-  3. Descriptors
-     1. Identities (including Primary)
-     2. Relationship
-     3. Reference
+1. Classes
+2. Field Group’s
+3. Descriptors
+   1. Identities (including Primary)
+   2. Relationship
+   3. Reference
 
 ### **Reference Material**
 

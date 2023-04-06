@@ -2,7 +2,7 @@
 
 ## **Browse the “Customer Account” Schema you created above through UI**
 
-* Notice that the required class and the associated field groups are added to the schema
+Notice that the required class and the associated field groups are added to the schema
 
 ![Graphical user interface, application
 
