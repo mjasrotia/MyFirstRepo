@@ -6,6 +6,7 @@
 * [Environment](dep-schema-api-lab-manual/environment/README.md)
   * [Import API Lab Collection](dep-schema-api-lab-manual/environment/import-api-lab-collection.md)
   * [Import Configuration File](dep-schema-api-lab-manual/environment/import-configuration-file.md)
+  * [Generate Access Token](dep-schema-api-lab-manual/environment/generate-access-token.md)
 * [Schema](dep-schema-api-lab-manual/schema/README.md)
   * [Get Standard Field Groups](dep-schema-api-lab-manual/schema/get-standard-field-groups.md)
   * [Create Custom Field Group](dep-schema-api-lab-manual/schema/create-custom-field-group.md)
