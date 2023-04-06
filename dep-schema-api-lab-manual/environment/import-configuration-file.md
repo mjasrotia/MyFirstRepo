@@ -50,7 +50,7 @@ Description automatically generated](<../../.gitbook/assets/12 (3).png>)
 
 Make sure you hit the “Save” button after you add the variable and the values in both the **“INITIAL\_VALUE”** and “**CURRENT\_VALUE”** Fields. example: _attendee-001_
 
-## **Authenticate your Sandbox credentials**
+## **Generate Your Access Token**
 
 * Click on **“IMS: JWT Generate + Auth via User Token”** API call in the “Authenticate” Folder. **Do not execute it yet.**
 * The above API will generate the bearer token for you to authenticate your identity but it’s worth going through the following points in brief to understand the authentication process.
