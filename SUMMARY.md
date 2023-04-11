@@ -3,10 +3,10 @@
 ## DEP Schema API Lab Manual
 
 * [Overview](README.md)
-* [Postman Setup](dep-schema-api-lab-manual/postman-setup/README.md)
+* [Postman Setup](dep-schema-api-lab-manual/environment/README.md)
+  * [Setup Environment File](dep-schema-api-lab-manual/postman-setup/setup-environment-file.md)
   * [Import API Collection](dep-schema-api-lab-manual/postman-setup/import-api-collection.md)
-  * [Import Environment File](dep-schema-api-lab-manual/postman-setup/import-environment-file.md)
-  * [Generate Access Token](dep-schema-api-lab-manual/postman-setup/generate-access-token.md)
+  * [Generate Access Token](dep-schema-api-lab-manual/environment/generate-access-token.md)
 * [Schema](dep-schema-api-lab-manual/schema/README.md)
   * [Get Standard Field Groups](dep-schema-api-lab-manual/schema/get-standard-field-groups.md)
   * [Create Custom Field Group](dep-schema-api-lab-manual/schema/create-custom-field-group.md)

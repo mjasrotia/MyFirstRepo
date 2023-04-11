@@ -1,4 +1,4 @@
-# Import API Collection
+# Setup Environment File
 
 ## Postman Environment File
 
