@@ -2,7 +2,7 @@
 
 ## Postman Files
 
-{% file src="../../.gitbook/assets/AEP Bootcamp.postman_environment.json" %}
+{% file src="../../.gitbook/assets/AEP Bootcamp.postman_environment (1).json" %}
 Environment File
 {% endfile %}
 
@@ -17,22 +17,25 @@ API Collection
 1. Open the `Environment File` from above in your browser by clicking on the file
 2. Copy the URL of the file to your clipboard
 3. Launch Postman on your local machine and click on the `Import` button within your workspace
+4. Paste the URL of the `Environment File` into the import modal text box on the overlay.  This should trigger an automatic import
+
+<div>
+
+<figure><img src="../../.gitbook/assets/import-button.png" alt=""><figcaption><p>Import Button</p></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/import-button-overlay.png" alt=""><figcaption><p>Import Button Overlay</p></figcaption></figure>
+
+</div>
 
 
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-**“Upload”** the provided postman collection file
 
-![Graphical user interface, text, application, email
 
-Description automatically generated](<../../.gitbook/assets/2 (10).png>)
 
-The file will be automatically identified as a **“Collection”** file
 
-![Graphical user interface, application, Word
-
-Description automatically generated](<../../.gitbook/assets/3 (6).png>)
 
 Once imported, your environment file will appear in the dropdown marked below.
 
