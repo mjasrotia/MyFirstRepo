@@ -1,14 +1,25 @@
-# Import API Lab Collection
+# Import API Collection
 
-## **Import the Postman collection.**
+## Downloadable Files
 
-<mark style="color:red;">**Collection: “Location link required here”**</mark>
+{% file src="../../.gitbook/assets/AEP Bootcamp.postman_environment.json" %}
+Environment File
+{% endfile %}
 
-Click on the **“import”** button
+{% file src="../../.gitbook/assets/AEP Foundations Bootcamp.postman_collection (1).json" %}
+API Collection
+{% endfile %}
 
-![Graphical user interface, application
 
-Description automatically generated](<../../.gitbook/assets/1 (8).png>)
+
+## **Import Postman Files**
+
+1. Download both the files above to you local machine
+2. Launch Postman on your local machine and click on the `Import` button within your workspace
+
+
+
+![](../../.gitbook/assets/image.png)
 
 **“Upload”** the provided postman collection file
 
