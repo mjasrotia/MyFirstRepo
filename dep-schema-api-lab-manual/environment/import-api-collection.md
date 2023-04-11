@@ -29,7 +29,7 @@ Once imported, you can validate your environment file exists by clicking on the 
 
 <figure><img src="../../.gitbook/assets/environment-validation.png" alt=""><figcaption><p>AEP Bootcamp Environment</p></figcaption></figure>
 
-## Update Environment Variables
+## Environment Variables
 
 Before you can make any API calls you need to update two variables within the Postman Environment you just imported.&#x20;
 
@@ -40,33 +40,20 @@ Before you can make any API calls you need to update two variables within the Po
 Your sandbox value and private key can be found within the Microsoft Teams folder under `General -> Files`
 {% endhint %}
 
-
+## Update Sandbox Name
 
 1. Click on the `Environments` tab in the left sidebar of Postman
 2. Next click on the `AEP Bootcamp` environment file
 3. Locate the `SANDBOX_NAME` variable and update the `Current Value` to your sandbox name
 4. Save your updates by clicking the `Save` button in the top right of the environment workspace
 
-![Graphical user interface, text, application
+When you are done your environment file should look like this:
 
-Description automatically generated](<../../.gitbook/assets/4 (4).png>)
+<figure><img src="../../.gitbook/assets/sandbox-update.png" alt=""><figcaption><p>Environment File with SANDBOX_NAME</p></figcaption></figure>
 
-**This collection has the following folders: AEP Bootcamp API Lab collection**
 
-* **IMS Authenticate**
-  * Contains all the API call to authenticate the client credentials to execute API calls.
-* **XDM API Lab**
-  * Contains all the API calls to create XDM components like Schema, Field Groups, Primary/non-primary and Relationship Identities.
-* **Reference API Calls**
-  * Contains some reference **“GET”** API calls to help you navigate the Schema registry
-  * You can use these API calls to browse the XDM components you created and also to get identifiers of various XDM components which you would need as you go through the API Lab. It would be good to have at least have a glance at these
-  * Please note that you will have to **create/POST** the XDM components first to expect results in the GET API calls.
-  * Below is a sample screen shot of the folders in your **POSTMAN** collection.
-* **Pipeline API Lab**
-  * Contains streaming API calls to send Customer and Orders sample payloads
-* **Profile API Lab**
-  * Contains API calls to lookup profile, experience events and identity graphs.
 
-![Graphical user interface, application
+## Update Private Key
 
-Description automatically generated](<../../.gitbook/assets/5 (9).png>)
+1. Open your environment file again if you closed it.  This time you will be adding the private key.
+2. Copy the value of the private key from the teams
