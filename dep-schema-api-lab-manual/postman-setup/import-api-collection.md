@@ -12,7 +12,7 @@ API Collection
 
 
 
-## **Import Postman Files**
+## **Import Environment File**
 
 1. Open the `Environment File` from above in your browser by clicking on the file
 2. Copy the URL of the file to your clipboard
@@ -29,15 +29,27 @@ API Collection
 
 </div>
 
+Once imported, you can validate your environment file exists by clicking on the `Environments` tab in the left sidebar.  You should see something similiar to below.
+
+<figure><img src="../../.gitbook/assets/environment-validation.png" alt=""><figcaption><p>AEP Bootcamp Environment</p></figcaption></figure>
+
+## Update Environment Variables
+
+Before you can make any API calls you need to update two variables within the Postman Environment you just imported.&#x20;
+
+* `SANDBOX_NAME` - tells the Experience Platform what sandbox to execute the call in
+* `PRIVATE_KEY` - the developer projects private key allowing you to request an `ACCESS_TOKEN`
+
+{% hint style="info" %}
+Your sandbox value and private key can be found within the Microsoft Teams folder under `General -> Files`
+{% endhint %}
 
 
 
-
-
-
-
-
-Once imported, your environment file will appear in the dropdown marked below.
+1. Click on the `Environments` tab in the left sidebar of Postman
+2. Next click on the `AEP Bootcamp` environment file
+3. Locate the `SANDBOX_NAME` variable and update the `Current Value` to your sandbox name
+4. Save your updates by clicking the `Save` button in the top right of the environment workspace
 
 ![Graphical user interface, text, application
 
