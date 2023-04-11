@@ -4,7 +4,7 @@
 
 * [Overview](README.md)
 * [Postman Setup](dep-schema-api-lab-manual/environment/README.md)
-  * [Setup Environment File](dep-schema-api-lab-manual/postman-setup/setup-environment-file.md)
+  * [Setup Environment File](dep-schema-api-lab-manual/environment/import-api-collection.md)
   * [Import API Collection](dep-schema-api-lab-manual/postman-setup/import-api-collection.md)
   * [Generate Access Token](dep-schema-api-lab-manual/environment/generate-access-token.md)
 * [Schema](dep-schema-api-lab-manual/schema/README.md)
