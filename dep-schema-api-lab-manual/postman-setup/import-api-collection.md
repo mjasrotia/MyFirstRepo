@@ -2,11 +2,28 @@
 
 ## Postman API Collection File
 
-{% file src="../../.gitbook/assets/AEP Bootcamp.postman_environment (1).json" %}
-Environment File
+{% file src="../../.gitbook/assets/AEP Foundations Bootcamp.postman_collection (1).json" %}
+Bootcamp API Collection File
 {% endfile %}
 
 
+
+## Import API Collection
+
+1. Open the `Postman API Collection File` from above in your browser by clicking on the file
+2. Copy the URL of the file to your clipboard
+3. Launch Postman on your local machine and click on the `Import` button within your workspace
+4. Paste the URL of the `Postman API Collection File` into the import modal text box on the overlay.  This should trigger an automatic import
+
+<div>
+
+<figure><img src="../../.gitbook/assets/import-button.png" alt=""><figcaption><p>Import Button</p></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/import-button-overlay.png" alt=""><figcaption><p>Import Button Modal Text Box</p></figcaption></figure>
+
+</div>
 
 ![Graphical user interface, text, application
 
