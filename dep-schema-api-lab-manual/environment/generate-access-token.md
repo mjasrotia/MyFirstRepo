@@ -37,9 +37,8 @@ Now that you understand a little bit about how Adobe secures its API's and what 
 
 ## Authenticate via Adobe's Identity Management Service
 
-In Postman navigate to the directory title `Authenticate` and open the call titled "IMS: JWT Generate + Auth via User Token”.&#x20;
-
-Execute the call by clicking the “Send” button
+1. Launch Postman and navigate to the directory titled `IMS Authenticate` and open the request by clicking on it
+2. Execute the call by clicking the “Send” button
 
 ![](<../../.gitbook/assets/14 (1).png>)
 
@@ -49,9 +48,19 @@ Successful response
 
 Description automatically generated](<../../.gitbook/assets/15 (4).png>)
 
-Make sure your Environment file has the right parameters populated.&#x20;
+
+
+
+
+Before you continue we want to double check that your access is legit. Perform the following steps:
+
+* Open the folder titled `Check Sandbox Access` and click on the call titled `Retrieve Your Sandbox`
+* Next in the upper right corner of Postman you'll see an Environment drop-down box.  Be sure to select the `AEP Bootcamp` environment
+* Execute the call by clicking the `Send` button
 
 ## Common Errors
+
+*
 
 **Invalid IMS**
 
