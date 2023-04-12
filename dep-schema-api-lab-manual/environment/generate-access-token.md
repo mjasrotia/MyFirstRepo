@@ -38,7 +38,8 @@ Now that you understand a little bit about how Adobe secures its API's and what 
 ## Authenticate with Postman
 
 1. Launch Postman and navigate to the directory titled `IMS Authenticate` and open the request by clicking on it
-2. Execute the call by clicking the “Send” button
+2. Next in the upper right corner of Postman you'll see an environment drop-down. Select the `AEP Bootcamp` environment from the drop-down
+3. Now execute the call by clicking the “Send” button
 
 ![](<../../.gitbook/assets/14 (1).png>)
 
@@ -48,19 +49,25 @@ A successful response should look like this
 
 
 
-
-
-Before you continue we want to double check that your access is legit. Perform the following steps:
-
-* Open the folder titled `Check Sandbox Access` and click on the call titled `Retrieve Your Sandbox`
-* Next in the upper right corner of Postman you'll see an Environment drop-down box.  Be sure to select the `AEP Bootcamp` environment
-* Execute the call by clicking the `Send` button
-
 ## Common Errors
 
-*
+### **Invalid Token**
 
-**Invalid IMS**
+This occurs when the `private_key` in your environment file is malformed or no longer valid. If you see this ensure you have copied the entire key including the entire key with line breaks
+
+Example:
+
+```
+-----BEGIN PRIVATE KEY----- 
+some uber long varchar set is here
+-----END PRIVATE KEY----- 
+```
+
+<figure><img src="../../.gitbook/assets/400-bad-jwt.png" alt=""><figcaption><p>400 invalid_token</p></figcaption></figure>
+
+
+
+
 
 ![Graphical user interface, text, application, email
 

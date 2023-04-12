@@ -44,7 +44,7 @@ Your sandbox value and private key can be found within the Microsoft Teams folde
 
 1. Click on the `Environments` tab in the left sidebar of Postman
 2. Next click on the `AEP Bootcamp` environment file
-3. Locate the `SANDBOX_NAME` variable and update the `Current Value` to your sandbox name
+3. Locate the `SANDBOX_NAME` variable and update the `Initial and Current values` to your sandbox name
 4. Save your updates by clicking the `Save` button in the top right of the environment workspace
 
 When you are done your environment file should look like this:
@@ -57,7 +57,7 @@ When you are done your environment file should look like this:
 
 1. Open your environment file again if you closed it.  This time you will be adding the private key.
 2. Copy the value of the private key from the teams location noted in the [Environment Variables](import-api-collection.md#environment-variables) section
-3. Located the `PRIVATE_KEY` variable and update the `Current Value` with the private key from step 2
+3. Located the `PRIVATE_KEY` variable and update both the  `Initial and Current values` with the private key from step 2
 4. Save your updates by clicking the `Save` button in the top right of the environment workspace
 
 When you are done your environment file should look like this:
