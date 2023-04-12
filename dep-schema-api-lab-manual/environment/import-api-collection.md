@@ -37,7 +37,7 @@ Before you can make any API calls you need to update two variables within the Po
 * `PRIVATE_KEY` - the developer projects private key allowing you to request an `ACCESS_TOKEN`
 
 {% hint style="info" %}
-Your sandbox value and private key can be found within the Microsoft Teams folder under `General -> Files`
+Your sandbox value and private key can be found within the Microsoft Teams folder under `<Bootcamp Channel> -> Files`
 {% endhint %}
 
 ## Update Sandbox Name
@@ -62,8 +62,8 @@ When you are done your environment file should look like this:
 
 When you are done your environment file should look like this:
 
-
+<figure><img src="../../.gitbook/assets/private-key-update.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-Congratulations you have completed your Postman Environment configuration!
+Congratulations! You have completed your Postman Environment configuration
 {% endhint %}

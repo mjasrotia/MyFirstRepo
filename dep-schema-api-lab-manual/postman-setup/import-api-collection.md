@@ -25,26 +25,21 @@ Bootcamp API Collection File
 
 </div>
 
-![Graphical user interface, text, application
+You should now see a collection populated under the left sidebars `Collections` tab called `AEP Foundations Bootcamp`
 
-Description automatically generated](<../../.gitbook/assets/4 (4).png>)
+<figure><img src="../../.gitbook/assets/bootcamp-collection.png" alt=""><figcaption></figcaption></figure>
 
-**This collection has the following folders: AEP Bootcamp API Lab collection**
+## **AEP Foundations Bootcamp Collection Overview**
 
-* **IMS Authenticate**
-  * Contains all the API call to authenticate the client credentials to execute API calls.
-* **XDM API Lab**
-  * Contains all the API calls to create XDM components like Schema, Field Groups, Primary/non-primary and Relationship Identities.
-* **Reference API Calls**
-  * Contains some reference **“GET”** API calls to help you navigate the Schema registry
-  * You can use these API calls to browse the XDM components you created and also to get identifiers of various XDM components which you would need as you go through the API Lab. It would be good to have at least have a glance at these
-  * Please note that you will have to **create/POST** the XDM components first to expect results in the GET API calls.
-  * Below is a sample screen shot of the folders in your **POSTMAN** collection.
-* **Pipeline API Lab**
-  * Contains streaming API calls to send Customer and Orders sample payloads
-* **Profile API Lab**
-  * Contains API calls to lookup profile, experience events and identity graphs.
+The API collection you imported contains all the necessary API calls you will need for labs throughout the bootcamp.  Each lab is organized into a specific folder with its own set of APIs.  Please be aware of this as you work through labs this week.
 
-![Graphical user interface, application
+Details about each folder can be found below:
 
-Description automatically generated](<../../.gitbook/assets/5 (9).png>)
+* **IMS Authenticate** - contains a single request to generate an access\_token which is required when working with any of the Adobe Experience Platform APIs
+* **XDM Schema Lab** - contains a set of requests for creating the XDM components necessary for building and configuring a schema for the Real-Time Customer Profile
+* **Data Ingestion Lab** - contains a set of requests for streaming data into the Experience Platform
+* **Profile Lab** - contains a set of requests for viewing the Real-Time Customer Profile's traits and behaviors
+
+{% hint style="success" %}
+Congratulations!  You have successfully imported the bootcamp's Postman Collection
+{% endhint %}
