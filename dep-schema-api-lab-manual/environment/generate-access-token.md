@@ -35,18 +35,16 @@ Now that you understand a little bit about how Adobe secures its API's and what 
 
 
 
-## Authenticate via Adobe's Identity Management Service
+## Authenticate with Postman
 
 1. Launch Postman and navigate to the directory titled `IMS Authenticate` and open the request by clicking on it
 2. Execute the call by clicking the “Send” button
 
 ![](<../../.gitbook/assets/14 (1).png>)
 
-Successful response
+A successful response should look like this
 
-![Graphical user interface, text
 
-Description automatically generated](<../../.gitbook/assets/15 (4).png>)
 
 
 
