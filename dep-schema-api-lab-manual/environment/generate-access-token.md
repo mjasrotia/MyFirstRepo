@@ -1,34 +1,37 @@
 # Generate Access Token
 
-## Overview
+## API Security Overview
 
-Make sure that you have the following parameters defined in your environment file. Following parameters should have been made available as part of your postman setup prerequisite. The values of these parameters will be provided by the instructor.
+To establish a secure service-to-service Adobe API session, Adobe requires you to create a JSON Web Token (JWT) that encapsulates the identity of your developer project integration, and then exchange it for an access token. A developer project integration can only be created by those with `Developer Rights` and is assigned within the Adobe Admin Console at a product level. Once you have these rights you can create developer projects utilizing the various Adobe product related APIs.  This is where creating a JWT comes into the picture.  To create a JWT you must' pass a certain set of claims to Adobe's Identity Management Service (IMS) and those claims must be signed using a valid digital signing certification (i.e. public/private key pair).
 
-* CLIENT\_SECRET
-* API\_KEY
-* META\_SCOPE
-* PRIVATE\_KEY
-* TECHNICAL\_ACCOUNT\_ID
-* IMS\_ORG
-* IMS
-* SANDBOX\_NAME
+{% hint style="info" %}
+You can learn more about this process [here](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) but for the bootcamp we will "hand wave" this step of the process and instead utilize a super neat Postman library
+{% endhint %}
 
-To establish a secure service-to-service Adobe API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your developer project integration, and then exchange it for an access token. Every request to an Adobe service must include the access token in the Authorization header, along with the API Key (Client ID) that was generated when you created the Service Account Integration in the Adobe Developer Console.
+Every request to any Adobe service must include the access token in the Authorization header along with the Client Secret that was generated during the developer project creation.  Additionally, the Experience Platform and its associated applications require two other header params are present on each request.&#x20;
 
-**Creating a JSON Web Token** A JSON Web Token for Service Account authentication requires a particular set of claims and must be signed using a valid digital signing certificate. Your JWT must contain the following claims (all of which you learn more about [here](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/))
+* `x-gw-ims-org-id` - this param specifies the `IMS Org` that the request belongs to and ensures the processing of the requests resolves to the appropriate SaaS environment
+* `x-sandbox-name` - this param specifics which sandbox to process the request in within the Experience Platform
 
-| exp        | Required. The expiration parameter is a required parameter measuring the absolute time since 01/01/1970 GMT. You must ensure that the expiration time is later than the time of issue. After this time, the JWT is no longer valid. Recommendation: Have a very short lived token (a few minutes) - such that it expires soon after it has been exchanged for an IMS access token. Every time a new access token is required, one such JWT is signed and exchanged. This is secure approach. Longer lived tokens that are re-used to obtain access tokens as needed are not recommended. |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| iss        | Required. The issuer, your Organization ID from the Adobe Developer Console integration, in the format org\_ident@AdobeOrg. Identifies your organization that has been configured for access to the Adobe I/O API.                                                                                                                                                                                                                                                                                                                                                                       |
-| sub        | Required. The subject, your Technical Account ID from the Adobe Developer Console integration, in the format: [id@techacct.adobe.com](mailto:id@techacct.adobe.com).                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| aud        | Required. The audience for the token, your API Key from the Adobe Developer Console integration, in the format: [https://ims-na1.adobelogin.com/c/api\_key](https://ims-na1.adobelogin.com/c/api\_key).                                                                                                                                                                                                                                                                                                                                                                                  |
-| metascopes | Required. The API-access claim configured for your organization: JWT Metascopes, in the format: "[https://ims-na1.adobelogin.com/s/meta\_scope"](https://ims-na1.adobelogin.com/s/meta\_scope%22): true                                                                                                                                                                                                                                                                                                                                                                                  |
+{% hint style="danger" %}
+Not specifying the `x-sandbox-name` param does not fail the request as you might expect. Instead it defaults the request to process into the `default` sandbox that is automatically provisioned with any Experience Platform environment
+{% endhint %}
 
-### **Bootstrapping the Authentication process**
+{% hint style="info" %}
+As part of this bootcamp we created a developer project and provided you a Postman Environment file with all of the necessary values to create a JWT and request an `access_token` .  This is what you uploaded in the previous steps of the lab
+{% endhint %}
 
-To be able to authenticate, Adobe has developed a collection that locally signs the JWT on your machine and then passes that JWT in the call to Adobe's Identity Management Service (IMS) to authenticate. To locally sign the JWT a crypto JavaScript library is loaded as part of a pre-request script in the Postman request. This script uses the “RSA-Sign JavaScript Library” and creates a Global Postman environment variable (which persists even if you close Postman, nice!). The response from the request to Adobe's IMS will always respond with the following upon a successful call
 
-![](<../../.gitbook/assets/13 (2).png>)
+
+## Postman + Adobe IMS
+
+As discussed above, to be able to utilize Adobe product API's you must include and access token in the Authorization header of each request. Adobe has developed a request in Postman that locally signs the JWT on your machine and then passes that JWT in the call to Adobe's Identity Management Service (IMS) to authenticate. To locally sign the JWT a crypto JavaScript library is loaded as part of a pre-request script in the Postman request. This script uses the “RSA-Sign JavaScript Library” and creates a Global Postman environment variable (which persists even if you close Postman, nice!).&#x20;
+
+You can see the code for this request within the `AEP Foundations Bootcamp` collection under the calls `Pre-request Scripts` tab within the call itself.
+
+<figure><img src="../../.gitbook/assets/bootstrapping-auth.png" alt=""><figcaption><p>Bootstrapping the Adobe Authentication Process Using Postman</p></figcaption></figure>
+
+Now that you understand a little bit about how Adobe secures its API's and what is required to work them lets actually use them.
 
 
 
